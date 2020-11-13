@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7;
+package lesson7;
 
 /**
  * Created by Aleksandr Gladkov [Anticisco]
@@ -8,7 +8,6 @@ package ru.geekbrains.lesson7;
 public class Game {
     public static void main(String[] args) {
         new MainWindow();
-        System.out.println("method main is end");
     }
 }
 

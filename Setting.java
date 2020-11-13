@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson7;
+package lesson7;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 public class Setting extends JFrame {
 
     private static final int WINDOW_WIDTH = 350;
-    private static final int WINDOW_HEIGHT = 270;
+    private static final int WINDOW_HEIGHT = 230;
 
     private static final int MIN_WIN_LENGTH = 3;
     private static final int MIN_FIELD_SIZE = 3;
@@ -55,8 +55,7 @@ public class Setting extends JFrame {
 
         add(btnPlay);
         setVisible(false);
-
-    }
+     }
 
     private void addGameModeSetup() {
         add(new JLabel("Choose game mode:"));
@@ -114,7 +113,7 @@ public class Setting extends JFrame {
         int winLength = slideWinLen.getValue();
 
         mainWindow.startNewGame(gameMode, fieldSize, fieldSize, winLength);
-        setVisible(false);
 
+        setVisible(false);
     }
 }
